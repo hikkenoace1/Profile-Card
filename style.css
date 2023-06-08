@@ -1,0 +1,83 @@
+*{
+    box-sizing: content-box;
+}
+body{
+    background-image: url(images/bg-pattern-bottom.svg);
+    background-image: url(images/bg-pattern-top.svg);
+    min-height:90vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.background{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.container{
+    width: 350px;
+    height:400px;
+    
+    background-color: white;
+    border-radius:20px;
+
+}
+.person{
+    border-radius: 100px;
+    position: relative;
+    bottom:60px;
+    left: 115px;
+border:10px solid white;
+
+    
+}
+.text{
+    text-align: center;
+}
+.high-part{
+        position: relative;
+        bottom:50px;
+        
+}
+.name , .numbers{
+    font-family: Lexend deca;
+    font-weight: bold;
+    font-size:18px;
+}
+.text-one{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 20px;
+}
+.age , .details{
+    font-family:kumbh sans;
+    font-size:18px; 
+    font: weight 300px;;
+
+}
+.city{
+    position:relative;
+    top:10px;
+    font-family: kumbh sans;
+    font-size:18px;
+    font-weight:300
+}
+hr{
+    opacity: 0.4;
+}
+.low-part{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+@media screen and (max-width:375){
+    .container{
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    
+}
+
